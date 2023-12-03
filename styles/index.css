@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+header{
+    margin:10px;
+
+    display: flex;
+    flex-direction: column;
+}
+.logotype{
+    display: flex;
+    justify-content: space-between;    
+}
+.logo{
+    width: 60px;
+
+    box-shadow: 0 4px 5px black;
+}
+.input_logo{
+    visibility: hidden;
+}
+.toolbar{
+    margin-top: 10px;
+    padding: 5px;
+
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;  
+}
+a{
+    vertical-align: middle;
+    text-decoration: none;
+}
+.item{
+    border-radius: 4px;
+}
+.nav-item{
+    margin-left:10px;
+}
+.item-logo{
+    display: block;
+}
+.main_and_aside{
+    display: flex;
+    justify-content: space-around;
+}
+main{
+    margin:10px;
+    padding: 10px;
+    width: 65%;
+    border: 2px solid black;
+}
+h2{
+    margin:10px;
+
+    font-size: 20px;
+    font-weight: bolder;
+}
+.img-main{
+    padding: 5px;
+    width: 100%;
+}
+aside{
+    margin:10px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.list{
+    padding: 5px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+}
+.items_list{
+    padding: 5px;
+}
+li{
+    list-style-type:none;
+}
+.picture{
+    margin-top:25px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.row img{
+    margin:3px;
+    width: 20%;
+}
+.footer{
+    margin-top: 15px;
+    padding: 10px;  
+}
+@media screen and (max-width:900px){
+    .item_logo{
+        display: none;
+        visibility: hidden;
+    }
+    .input_logo{
+        visibility: visible;
+        height: 30px;
+    }
+    .picture{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .row img{
+        width: 80%;
+    }
+}
